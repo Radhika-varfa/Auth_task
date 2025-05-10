@@ -13,16 +13,17 @@ git clone https://github.com/Radhika-varfa/Auth_task.git
 cd Auth_task
 ```
 ## 2. Install Backend Dependencies
+```
 cd backend
 npm install
-
+```
 ## 3. Set up the MySQL Database
 - Create a new MySQL database.
 - Configure the credentials in the `.env` file inside the backend directory.
 - Example SQL commands to create the necessary tables:
 
 ``` 
- CREATE DATABASE myapp;
+CREATE DATABASE myapp;
 USE myapp;
 CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, first_name VARCHAR(255), last_name VARCHAR(255), email VARCHAR(255) UNIQUE, password VARCHAR(255), role ENUM('customer', 'admin') DEFAULT 'customer', email_verified BOOLEAN DEFAULT FALSE);
 
